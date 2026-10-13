@@ -1,0 +1,1608 @@
+2026-10-13 11:55:43,568:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:55:43,569:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:55:43,569:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:55:43,569:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:55:47,510:INFO:PyCaret ClassificationExperiment
+2026-10-13 11:55:47,511:INFO:Logging name: clf-default-name
+2026-10-13 11:55:47,511:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-10-13 11:55:47,511:INFO:version 3.3.2
+2026-10-13 11:55:47,512:INFO:Initializing setup()
+2026-10-13 11:55:47,512:INFO:self.USI: 894d
+2026-10-13 11:55:47,513:INFO:self._variable_keys: {'X_test', 'USI', 'logging_param', 'fold_generator', 'y_test', 'exp_id', 'html_param', 'exp_name_log', 'X', 'X_train', 'memory', 'target_param', 'fix_imbalance', 'seed', 'gpu_n_jobs_param', 'fold_groups_param', 'fold_shuffle_param', 'y_train', 'pipeline', 'log_plots_param', 'data', 'idx', 'is_multiclass', 'n_jobs_param', 'y', '_ml_usecase', '_available_plots', 'gpu_param'}
+2026-10-13 11:55:47,513:INFO:Checking environment
+2026-10-13 11:55:47,513:INFO:python_version: 3.11.9
+2026-10-13 11:55:47,513:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-10-13 11:55:47,513:INFO:machine: AMD64
+2026-10-13 11:55:47,540:INFO:platform: Windows-10-10.0.26200-SP0
+2026-10-13 11:55:47,541:INFO:Memory: svmem(total=16989728768, available=5162500096, percent=69.6, used=11827228672, free=5162500096)
+2026-10-13 11:55:47,541:INFO:Physical Core: 8
+2026-10-13 11:55:47,541:INFO:Logical Core: 16
+2026-10-13 11:55:47,541:INFO:Checking libraries
+2026-10-13 11:55:47,541:INFO:System:
+2026-10-13 11:55:47,542:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-10-13 11:55:47,542:INFO:executable: C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Scripts\python.exe
+2026-10-13 11:55:47,542:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-10-13 11:55:47,542:INFO:PyCaret required dependencies:
+2026-10-13 11:55:47,543:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:55:47,643:INFO:                 pip: 26.2.1
+2026-10-13 11:55:47,643:INFO:          setuptools: 65.5.0
+2026-10-13 11:55:47,643:INFO:             pycaret: 3.3.2
+2026-10-13 11:55:47,644:INFO:             IPython: 9.17.1
+2026-10-13 11:55:47,644:INFO:          ipywidgets: 8.1.9
+2026-10-13 11:55:47,644:INFO:                tqdm: 4.70.1
+2026-10-13 11:55:47,644:INFO:               numpy: 1.26.4
+2026-10-13 11:55:47,644:INFO:              pandas: 2.1.4
+2026-10-13 11:55:47,644:INFO:              jinja2: 3.1.6
+2026-10-13 11:55:47,644:INFO:               scipy: 1.11.4
+2026-10-13 11:55:47,644:INFO:              joblib: 1.3.2
+2026-10-13 11:55:47,644:INFO:             sklearn: 1.4.2
+2026-10-13 11:55:47,644:INFO:                pyod: 3.4.0
+2026-10-13 11:55:47,644:INFO:            imblearn: 0.14.2
+2026-10-13 11:55:47,644:INFO:   category_encoders: 2.7.0
+2026-10-13 11:55:47,644:INFO:            lightgbm: 4.7.0
+2026-10-13 11:55:47,644:INFO:               numba: 0.68.0
+2026-10-13 11:55:47,644:INFO:            requests: 2.34.2
+2026-10-13 11:55:47,644:INFO:          matplotlib: 3.7.5
+2026-10-13 11:55:47,644:INFO:          scikitplot: 0.3.7
+2026-10-13 11:55:47,645:INFO:         yellowbrick: 1.5
+2026-10-13 11:55:47,645:INFO:              plotly: 6.9.0
+2026-10-13 11:55:47,645:INFO:    plotly-resampler: Not installed
+2026-10-13 11:55:47,645:INFO:             kaleido: 1.5.0
+2026-10-13 11:55:47,645:INFO:           schemdraw: 0.15
+2026-10-13 11:55:47,645:INFO:         statsmodels: 0.15.0
+2026-10-13 11:55:47,645:INFO:              sktime: 0.26.0
+2026-10-13 11:55:47,645:INFO:               tbats: 1.1.3
+2026-10-13 11:55:47,645:INFO:            pmdarima: 2.0.4
+2026-10-13 11:55:47,645:INFO:              psutil: 7.2.2
+2026-10-13 11:55:47,645:INFO:          markupsafe: 3.0.4
+2026-10-13 11:55:47,645:INFO:             pickle5: Not installed
+2026-10-13 11:55:47,645:INFO:         cloudpickle: 3.1.2
+2026-10-13 11:55:47,645:INFO:         deprecation: 2.1.0
+2026-10-13 11:55:47,645:INFO:              xxhash: 4.0.1
+2026-10-13 11:55:47,645:INFO:           wurlitzer: Not installed
+2026-10-13 11:55:47,646:INFO:PyCaret optional dependencies:
+2026-10-13 11:55:47,674:INFO:                shap: Not installed
+2026-10-13 11:55:47,675:INFO:           interpret: Not installed
+2026-10-13 11:55:47,675:INFO:                umap: Not installed
+2026-10-13 11:55:47,675:INFO:     ydata_profiling: Not installed
+2026-10-13 11:55:47,675:INFO:  explainerdashboard: Not installed
+2026-10-13 11:55:47,675:INFO:             autoviz: Not installed
+2026-10-13 11:55:47,675:INFO:           fairlearn: Not installed
+2026-10-13 11:55:47,675:INFO:          deepchecks: Not installed
+2026-10-13 11:55:47,675:INFO:             xgboost: Not installed
+2026-10-13 11:55:47,675:INFO:            catboost: Not installed
+2026-10-13 11:55:47,675:INFO:              kmodes: Not installed
+2026-10-13 11:55:47,675:INFO:             mlxtend: Not installed
+2026-10-13 11:55:47,676:INFO:       statsforecast: Not installed
+2026-10-13 11:55:47,676:INFO:        tune_sklearn: Not installed
+2026-10-13 11:55:47,676:INFO:                 ray: Not installed
+2026-10-13 11:55:47,676:INFO:            hyperopt: Not installed
+2026-10-13 11:55:47,676:INFO:              optuna: Not installed
+2026-10-13 11:55:47,676:INFO:               skopt: Not installed
+2026-10-13 11:55:47,676:INFO:              mlflow: Not installed
+2026-10-13 11:55:47,676:INFO:              gradio: Not installed
+2026-10-13 11:55:47,676:INFO:             fastapi: Not installed
+2026-10-13 11:55:47,676:INFO:             uvicorn: Not installed
+2026-10-13 11:55:47,676:INFO:              m2cgen: Not installed
+2026-10-13 11:55:47,676:INFO:           evidently: Not installed
+2026-10-13 11:55:47,676:INFO:               fugue: Not installed
+2026-10-13 11:55:47,676:INFO:           streamlit: Not installed
+2026-10-13 11:55:47,676:INFO:             prophet: Not installed
+2026-10-13 11:55:47,676:INFO:None
+2026-10-13 11:55:47,676:INFO:Set up data.
+2026-10-13 11:55:47,693:INFO:Set up folding strategy.
+2026-10-13 11:55:47,693:INFO:Set up train/test split.
+2026-10-13 11:55:47,755:INFO:Set up index.
+2026-10-13 11:55:47,755:INFO:Assigning column types.
+2026-10-13 11:55:47,764:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-10-13 11:55:47,879:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 11:55:47,886:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:55:47,968:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:47,970:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,078:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 11:55:48,081:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:55:48,136:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,137:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,137:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-10-13 11:55:48,237:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:55:48,292:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,293:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,400:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:55:48,480:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,481:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,481:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-10-13 11:55:48,649:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,650:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,826:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,828:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:48,835:INFO:Preparing preprocessing pipeline...
+2026-10-13 11:55:48,838:INFO:Set up simple imputation.
+2026-10-13 11:55:48,844:INFO:Set up encoding of categorical features.
+2026-10-13 11:55:48,844:INFO:Set up imbalanced handling.
+2026-10-13 11:55:48,844:INFO:Set up feature normalization.
+2026-10-13 11:55:48,845:INFO:Set up column name cleaning.
+2026-10-13 11:55:49,044:INFO:Finished creating preprocessing pipeline.
+2026-10-13 11:55:49,061:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-10-13 11:55:49,061:INFO:Creating final display dataframe.
+2026-10-13 11:55:49,550:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target   Machine failure
+2                   Target type            Binary
+3           Original data shape         (8000, 7)
+4        Transformed data shape        (13220, 9)
+5   Transformed train set shape        (10820, 9)
+6    Transformed test set shape         (2400, 9)
+7              Numeric features                 5
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15                Fix imbalance              True
+16         Fix imbalance method             SMOTE
+17                    Normalize              True
+18             Normalize method            zscore
+19               Fold Generator   StratifiedKFold
+20                  Fold Number                 5
+21                     CPU Jobs                -1
+22                      Use GPU             False
+23               Log Experiment             False
+24              Experiment Name  clf-default-name
+25                          USI              894d
+2026-10-13 11:55:49,732:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:49,733:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:49,918:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:49,919:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:55:49,922:INFO:setup() successfully completed in 2.42s...............
+2026-10-13 11:55:49,922:INFO:Initializing compare_models()
+2026-10-13 11:55:49,922:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025210158A90>, include=['lr', 'dt', 'rf', 'et', 'gb'], exclude=None, fold=None, round=4, cross_validation=True, sort=F1, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x0000025210158A90>, 'include': ['lr', 'dt', 'rf', 'et', 'gb'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'F1', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2026-10-13 11:55:49,922:INFO:Checking exceptions
+2026-10-13 11:57:32,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:57:32,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:57:32,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:57:32,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 11:57:34,077:INFO:PyCaret ClassificationExperiment
+2026-10-13 11:57:34,077:INFO:Logging name: clf-default-name
+2026-10-13 11:57:34,077:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-10-13 11:57:34,077:INFO:version 3.3.2
+2026-10-13 11:57:34,078:INFO:Initializing setup()
+2026-10-13 11:57:34,078:INFO:self.USI: 4a62
+2026-10-13 11:57:34,078:INFO:self._variable_keys: {'_available_plots', 'data', 'y_train', 'seed', 'n_jobs_param', 'gpu_n_jobs_param', 'y_test', 'target_param', 'is_multiclass', 'log_plots_param', 'exp_id', 'fix_imbalance', 'X', 'logging_param', 'fold_shuffle_param', '_ml_usecase', 'USI', 'memory', 'exp_name_log', 'X_train', 'gpu_param', 'fold_generator', 'y', 'fold_groups_param', 'X_test', 'pipeline', 'html_param', 'idx'}
+2026-10-13 11:57:34,078:INFO:Checking environment
+2026-10-13 11:57:34,078:INFO:python_version: 3.11.9
+2026-10-13 11:57:34,078:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-10-13 11:57:34,080:INFO:machine: AMD64
+2026-10-13 11:57:34,111:INFO:platform: Windows-10-10.0.26200-SP0
+2026-10-13 11:57:34,114:INFO:Memory: svmem(total=16989728768, available=4824465408, percent=71.6, used=12165263360, free=4824465408)
+2026-10-13 11:57:34,114:INFO:Physical Core: 8
+2026-10-13 11:57:34,114:INFO:Logical Core: 16
+2026-10-13 11:57:34,115:INFO:Checking libraries
+2026-10-13 11:57:34,115:INFO:System:
+2026-10-13 11:57:34,115:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-10-13 11:57:34,115:INFO:executable: C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Scripts\python.exe
+2026-10-13 11:57:34,115:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-10-13 11:57:34,115:INFO:PyCaret required dependencies:
+2026-10-13 11:57:34,116:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:34,153:INFO:                 pip: 26.2.1
+2026-10-13 11:57:34,153:INFO:          setuptools: 65.5.0
+2026-10-13 11:57:34,153:INFO:             pycaret: 3.3.2
+2026-10-13 11:57:34,153:INFO:             IPython: 9.17.1
+2026-10-13 11:57:34,153:INFO:          ipywidgets: 8.1.9
+2026-10-13 11:57:34,153:INFO:                tqdm: 4.70.1
+2026-10-13 11:57:34,153:INFO:               numpy: 1.26.4
+2026-10-13 11:57:34,153:INFO:              pandas: 2.1.4
+2026-10-13 11:57:34,153:INFO:              jinja2: 3.1.6
+2026-10-13 11:57:34,153:INFO:               scipy: 1.11.4
+2026-10-13 11:57:34,153:INFO:              joblib: 1.3.2
+2026-10-13 11:57:34,153:INFO:             sklearn: 1.4.2
+2026-10-13 11:57:34,153:INFO:                pyod: 3.4.0
+2026-10-13 11:57:34,153:INFO:            imblearn: 0.14.2
+2026-10-13 11:57:34,153:INFO:   category_encoders: 2.7.0
+2026-10-13 11:57:34,153:INFO:            lightgbm: 4.7.0
+2026-10-13 11:57:34,154:INFO:               numba: 0.68.0
+2026-10-13 11:57:34,154:INFO:            requests: 2.34.2
+2026-10-13 11:57:34,154:INFO:          matplotlib: 3.7.5
+2026-10-13 11:57:34,154:INFO:          scikitplot: 0.3.7
+2026-10-13 11:57:34,154:INFO:         yellowbrick: 1.5
+2026-10-13 11:57:34,154:INFO:              plotly: 6.9.0
+2026-10-13 11:57:34,154:INFO:    plotly-resampler: Not installed
+2026-10-13 11:57:34,154:INFO:             kaleido: 1.5.0
+2026-10-13 11:57:34,154:INFO:           schemdraw: 0.15
+2026-10-13 11:57:34,154:INFO:         statsmodels: 0.15.0
+2026-10-13 11:57:34,154:INFO:              sktime: 0.26.0
+2026-10-13 11:57:34,154:INFO:               tbats: 1.1.3
+2026-10-13 11:57:34,154:INFO:            pmdarima: 2.0.4
+2026-10-13 11:57:34,154:INFO:              psutil: 7.2.2
+2026-10-13 11:57:34,154:INFO:          markupsafe: 3.0.4
+2026-10-13 11:57:34,154:INFO:             pickle5: Not installed
+2026-10-13 11:57:34,154:INFO:         cloudpickle: 3.1.2
+2026-10-13 11:57:34,154:INFO:         deprecation: 2.1.0
+2026-10-13 11:57:34,154:INFO:              xxhash: 4.0.1
+2026-10-13 11:57:34,155:INFO:           wurlitzer: Not installed
+2026-10-13 11:57:34,155:INFO:PyCaret optional dependencies:
+2026-10-13 11:57:34,175:INFO:                shap: Not installed
+2026-10-13 11:57:34,175:INFO:           interpret: Not installed
+2026-10-13 11:57:34,175:INFO:                umap: Not installed
+2026-10-13 11:57:34,175:INFO:     ydata_profiling: Not installed
+2026-10-13 11:57:34,175:INFO:  explainerdashboard: Not installed
+2026-10-13 11:57:34,176:INFO:             autoviz: Not installed
+2026-10-13 11:57:34,176:INFO:           fairlearn: Not installed
+2026-10-13 11:57:34,176:INFO:          deepchecks: Not installed
+2026-10-13 11:57:34,176:INFO:             xgboost: Not installed
+2026-10-13 11:57:34,176:INFO:            catboost: Not installed
+2026-10-13 11:57:34,176:INFO:              kmodes: Not installed
+2026-10-13 11:57:34,176:INFO:             mlxtend: Not installed
+2026-10-13 11:57:34,176:INFO:       statsforecast: Not installed
+2026-10-13 11:57:34,176:INFO:        tune_sklearn: Not installed
+2026-10-13 11:57:34,176:INFO:                 ray: Not installed
+2026-10-13 11:57:34,176:INFO:            hyperopt: Not installed
+2026-10-13 11:57:34,176:INFO:              optuna: Not installed
+2026-10-13 11:57:34,176:INFO:               skopt: Not installed
+2026-10-13 11:57:34,176:INFO:              mlflow: Not installed
+2026-10-13 11:57:34,176:INFO:              gradio: Not installed
+2026-10-13 11:57:34,176:INFO:             fastapi: Not installed
+2026-10-13 11:57:34,176:INFO:             uvicorn: Not installed
+2026-10-13 11:57:34,176:INFO:              m2cgen: Not installed
+2026-10-13 11:57:34,176:INFO:           evidently: Not installed
+2026-10-13 11:57:34,176:INFO:               fugue: Not installed
+2026-10-13 11:57:34,176:INFO:           streamlit: Not installed
+2026-10-13 11:57:34,177:INFO:             prophet: Not installed
+2026-10-13 11:57:34,177:INFO:None
+2026-10-13 11:57:34,177:INFO:Set up data.
+2026-10-13 11:57:34,184:INFO:Set up folding strategy.
+2026-10-13 11:57:34,184:INFO:Set up train/test split.
+2026-10-13 11:57:34,195:INFO:Set up index.
+2026-10-13 11:57:34,195:INFO:Assigning column types.
+2026-10-13 11:57:34,200:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-10-13 11:57:34,255:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,259:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,310:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,311:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,366:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,367:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,404:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,404:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,405:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-10-13 11:57:34,461:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,496:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,497:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,569:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 11:57:34,604:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,604:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,605:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-10-13 11:57:34,697:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,698:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,784:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,784:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:34,787:INFO:Preparing preprocessing pipeline...
+2026-10-13 11:57:34,789:INFO:Set up simple imputation.
+2026-10-13 11:57:34,792:INFO:Set up encoding of categorical features.
+2026-10-13 11:57:34,792:INFO:Set up imbalanced handling.
+2026-10-13 11:57:34,792:INFO:Set up feature normalization.
+2026-10-13 11:57:34,793:INFO:Set up column name cleaning.
+2026-10-13 11:57:34,933:INFO:Finished creating preprocessing pipeline.
+2026-10-13 11:57:34,943:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-10-13 11:57:34,943:INFO:Creating final display dataframe.
+2026-10-13 11:57:35,147:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target   Machine failure
+2                   Target type            Binary
+3           Original data shape         (8000, 7)
+4        Transformed data shape        (13220, 9)
+5   Transformed train set shape        (10820, 9)
+6    Transformed test set shape         (2400, 9)
+7              Numeric features                 5
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15                Fix imbalance              True
+16         Fix imbalance method             SMOTE
+17                    Normalize              True
+18             Normalize method            zscore
+19               Fold Generator   StratifiedKFold
+20                  Fold Number                 5
+21                     CPU Jobs                -1
+22                      Use GPU             False
+23               Log Experiment             False
+24              Experiment Name  clf-default-name
+25                          USI              4a62
+2026-10-13 11:57:35,248:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:35,249:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:35,345:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:35,345:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 11:57:35,346:INFO:setup() successfully completed in 1.28s...............
+2026-10-13 11:57:35,347:INFO:Initializing compare_models()
+2026-10-13 11:57:35,347:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, include=['lr', 'dt', 'rf', 'et', 'lightgbm'], exclude=None, fold=None, round=4, cross_validation=True, sort=F1, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, 'include': ['lr', 'dt', 'rf', 'et', 'lightgbm'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'F1', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2026-10-13 11:57:35,347:INFO:Checking exceptions
+2026-10-13 11:57:35,352:INFO:Preparing display monitor
+2026-10-13 11:57:35,357:INFO:Initializing Logistic Regression
+2026-10-13 11:57:35,357:INFO:Total runtime is 0.0 minutes
+2026-10-13 11:57:35,358:INFO:SubProcess create_model() called ==================================
+2026-10-13 11:57:35,358:INFO:Initializing create_model()
+2026-10-13 11:57:35,358:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:35,359:INFO:Checking exceptions
+2026-10-13 11:57:35,359:INFO:Importing libraries
+2026-10-13 11:57:35,359:INFO:Copying training dataset
+2026-10-13 11:57:35,366:INFO:Defining folds
+2026-10-13 11:57:35,366:INFO:Declaring metric variables
+2026-10-13 11:57:35,366:INFO:Importing untrained model
+2026-10-13 11:57:35,367:INFO:Logistic Regression Imported successfully
+2026-10-13 11:57:35,367:INFO:Starting cross validation
+2026-10-13 11:57:35,371:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:41,229:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:41,286:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:41,303:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:41,304:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:41,338:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:41,634:INFO:Calculating mean and std
+2026-10-13 11:57:41,636:INFO:Creating metrics dataframe
+2026-10-13 11:57:41,639:INFO:Uploading results into container
+2026-10-13 11:57:41,640:INFO:Uploading model into container now
+2026-10-13 11:57:41,640:INFO:_master_model_container: 1
+2026-10-13 11:57:41,641:INFO:_display_container: 2
+2026-10-13 11:57:41,641:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-10-13 11:57:41,641:INFO:create_model() successfully completed......................................
+2026-10-13 11:57:41,742:INFO:SubProcess create_model() end ==================================
+2026-10-13 11:57:41,742:INFO:Creating metrics dataframe
+2026-10-13 11:57:41,745:INFO:Initializing Decision Tree Classifier
+2026-10-13 11:57:41,745:INFO:Total runtime is 0.10647195180257162 minutes
+2026-10-13 11:57:41,745:INFO:SubProcess create_model() called ==================================
+2026-10-13 11:57:41,745:INFO:Initializing create_model()
+2026-10-13 11:57:41,745:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=dt, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:41,745:INFO:Checking exceptions
+2026-10-13 11:57:41,746:INFO:Importing libraries
+2026-10-13 11:57:41,746:INFO:Copying training dataset
+2026-10-13 11:57:41,751:INFO:Defining folds
+2026-10-13 11:57:41,751:INFO:Declaring metric variables
+2026-10-13 11:57:41,751:INFO:Importing untrained model
+2026-10-13 11:57:41,751:INFO:Decision Tree Classifier Imported successfully
+2026-10-13 11:57:41,752:INFO:Starting cross validation
+2026-10-13 11:57:41,754:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:46,222:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:46,240:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:46,247:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:46,267:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:46,275:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:46,656:INFO:Calculating mean and std
+2026-10-13 11:57:46,658:INFO:Creating metrics dataframe
+2026-10-13 11:57:46,661:INFO:Uploading results into container
+2026-10-13 11:57:46,662:INFO:Uploading model into container now
+2026-10-13 11:57:46,663:INFO:_master_model_container: 2
+2026-10-13 11:57:46,663:INFO:_display_container: 2
+2026-10-13 11:57:46,663:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=42, splitter='best')
+2026-10-13 11:57:46,664:INFO:create_model() successfully completed......................................
+2026-10-13 11:57:46,759:INFO:SubProcess create_model() end ==================================
+2026-10-13 11:57:46,759:INFO:Creating metrics dataframe
+2026-10-13 11:57:46,762:INFO:Initializing Random Forest Classifier
+2026-10-13 11:57:46,762:INFO:Total runtime is 0.19008979797363282 minutes
+2026-10-13 11:57:46,762:INFO:SubProcess create_model() called ==================================
+2026-10-13 11:57:46,763:INFO:Initializing create_model()
+2026-10-13 11:57:46,763:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=rf, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:46,763:INFO:Checking exceptions
+2026-10-13 11:57:46,763:INFO:Importing libraries
+2026-10-13 11:57:46,763:INFO:Copying training dataset
+2026-10-13 11:57:46,769:INFO:Defining folds
+2026-10-13 11:57:46,769:INFO:Declaring metric variables
+2026-10-13 11:57:46,769:INFO:Importing untrained model
+2026-10-13 11:57:46,770:INFO:Random Forest Classifier Imported successfully
+2026-10-13 11:57:46,770:INFO:Starting cross validation
+2026-10-13 11:57:46,771:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:51,404:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:51,405:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:51,420:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:51,424:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:51,424:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:52,514:INFO:Calculating mean and std
+2026-10-13 11:57:52,515:INFO:Creating metrics dataframe
+2026-10-13 11:57:52,519:INFO:Uploading results into container
+2026-10-13 11:57:52,520:INFO:Uploading model into container now
+2026-10-13 11:57:52,521:INFO:_master_model_container: 3
+2026-10-13 11:57:52,521:INFO:_display_container: 2
+2026-10-13 11:57:52,522:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2026-10-13 11:57:52,522:INFO:create_model() successfully completed......................................
+2026-10-13 11:57:52,631:INFO:SubProcess create_model() end ==================================
+2026-10-13 11:57:52,631:INFO:Creating metrics dataframe
+2026-10-13 11:57:52,634:INFO:Initializing Extra Trees Classifier
+2026-10-13 11:57:52,634:INFO:Total runtime is 0.2879628737767538 minutes
+2026-10-13 11:57:52,634:INFO:SubProcess create_model() called ==================================
+2026-10-13 11:57:52,634:INFO:Initializing create_model()
+2026-10-13 11:57:52,634:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=et, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:52,635:INFO:Checking exceptions
+2026-10-13 11:57:52,635:INFO:Importing libraries
+2026-10-13 11:57:52,635:INFO:Copying training dataset
+2026-10-13 11:57:52,640:INFO:Defining folds
+2026-10-13 11:57:52,640:INFO:Declaring metric variables
+2026-10-13 11:57:52,642:INFO:Importing untrained model
+2026-10-13 11:57:52,642:INFO:Extra Trees Classifier Imported successfully
+2026-10-13 11:57:52,643:INFO:Starting cross validation
+2026-10-13 11:57:52,644:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:56,908:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 11:57:57,429:INFO:Calculating mean and std
+2026-10-13 11:57:57,430:INFO:Creating metrics dataframe
+2026-10-13 11:57:57,432:INFO:Uploading results into container
+2026-10-13 11:57:57,433:INFO:Uploading model into container now
+2026-10-13 11:57:57,434:INFO:_master_model_container: 4
+2026-10-13 11:57:57,434:INFO:_display_container: 2
+2026-10-13 11:57:57,435:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False)
+2026-10-13 11:57:57,435:INFO:create_model() successfully completed......................................
+2026-10-13 11:57:57,531:INFO:SubProcess create_model() end ==================================
+2026-10-13 11:57:57,531:INFO:Creating metrics dataframe
+2026-10-13 11:57:57,534:INFO:Initializing Light Gradient Boosting Machine
+2026-10-13 11:57:57,534:INFO:Total runtime is 0.3696231961250306 minutes
+2026-10-13 11:57:57,534:INFO:SubProcess create_model() called ==================================
+2026-10-13 11:57:57,534:INFO:Initializing create_model()
+2026-10-13 11:57:57,535:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=lightgbm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:57,535:INFO:Checking exceptions
+2026-10-13 11:57:57,535:INFO:Importing libraries
+2026-10-13 11:57:57,535:INFO:Copying training dataset
+2026-10-13 11:57:57,541:INFO:Defining folds
+2026-10-13 11:57:57,541:INFO:Declaring metric variables
+2026-10-13 11:57:57,542:INFO:Importing untrained model
+2026-10-13 11:57:57,542:INFO:Light Gradient Boosting Machine Imported successfully
+2026-10-13 11:57:57,543:INFO:Starting cross validation
+2026-10-13 11:57:57,545:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:58,035:WARNING:create_model() for lightgbm raised an exception or returned all 0.0, trying without fit_kwargs:
+2026-10-13 11:57:58,041:WARNING:Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1704, in fit
+    super().fit(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1171, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3758, in __init__
+    train_set.construct()
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2574, in construct
+    self._lazy_init(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2189, in _lazy_init
+    self.set_label(label)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3097, in set_label
+    self.set_field("label", label_array)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2860, in set_field
+    _LIB.LGBM_DatasetSetField(
+OSError: exception: access violation reading 0x0000000000000000
+
+
+2026-10-13 11:57:58,042:INFO:Initializing create_model()
+2026-10-13 11:57:58,042:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=lightgbm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002E25F424CD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:58,042:INFO:Checking exceptions
+2026-10-13 11:57:58,042:INFO:Importing libraries
+2026-10-13 11:57:58,042:INFO:Copying training dataset
+2026-10-13 11:57:58,052:INFO:Defining folds
+2026-10-13 11:57:58,052:INFO:Declaring metric variables
+2026-10-13 11:57:58,052:INFO:Importing untrained model
+2026-10-13 11:57:58,053:INFO:Light Gradient Boosting Machine Imported successfully
+2026-10-13 11:57:58,053:INFO:Starting cross validation
+2026-10-13 11:57:58,056:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 11:57:58,243:ERROR:create_model() for lightgbm raised an exception or returned all 0.0:
+2026-10-13 11:57:58,248:ERROR:Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 794, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1704, in fit
+    super().fit(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1171, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3758, in __init__
+    train_set.construct()
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2574, in construct
+    self._lazy_init(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2189, in _lazy_init
+    self.set_label(label)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3097, in set_label
+    self.set_field("label", label_array)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2860, in set_field
+    _LIB.LGBM_DatasetSetField(
+OSError: exception: access violation reading 0x0000000000000000
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 815, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1533, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1126, in _create_model_with_cv
+    scores = cross_validate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 450, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1704, in fit
+    super().fit(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\sklearn.py", line 1171, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3758, in __init__
+    train_set.construct()
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2574, in construct
+    self._lazy_init(
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2189, in _lazy_init
+    self.set_label(label)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 3097, in set_label
+    self.set_field("label", label_array)
+  File "C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\lightgbm\basic.py", line 2860, in set_field
+    _LIB.LGBM_DatasetSetField(
+OSError: exception: access violation reading 0x0000000000000000
+
+
+2026-10-13 11:57:58,249:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2026-10-13 11:57:58,252:INFO:Initializing create_model()
+2026-10-13 11:57:58,252:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E25EF57250>, estimator=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 11:57:58,252:INFO:Checking exceptions
+2026-10-13 11:57:58,253:INFO:Importing libraries
+2026-10-13 11:57:58,254:INFO:Copying training dataset
+2026-10-13 11:57:58,263:INFO:Defining folds
+2026-10-13 11:57:58,263:INFO:Declaring metric variables
+2026-10-13 11:57:58,263:INFO:Importing untrained model
+2026-10-13 11:57:58,263:INFO:Declaring custom model
+2026-10-13 11:57:58,264:INFO:Extra Trees Classifier Imported successfully
+2026-10-13 11:57:58,267:INFO:Cross validation set to False
+2026-10-13 11:57:58,267:INFO:Fitting Model
+2026-10-13 11:57:58,557:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False)
+2026-10-13 11:57:58,557:INFO:create_model() successfully completed......................................
+2026-10-13 11:57:58,652:INFO:_master_model_container: 4
+2026-10-13 11:57:58,652:INFO:_display_container: 2
+2026-10-13 11:57:58,653:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False)
+2026-10-13 11:57:58,653:INFO:compare_models() successfully completed......................................
+2026-10-13 11:57:58,676:INFO:Initializing save_model()
+2026-10-13 11:57:58,677:INFO:save_model(model=ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False), model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\best_failure_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2026-10-13 11:57:58,677:INFO:Adding model into prep_pipe
+2026-10-13 11:57:58,749:INFO:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\best_failure_model.pkl saved in current working directory
+2026-10-13 11:57:58,761:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categori...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      monotonic_cst=None, n_estimators=100,
+                                      n_jobs=-1, oob_score=False,
+                                      random_state=42, verbose=0,
+                                      warm_start=False))],
+         verbose=False)
+2026-10-13 11:57:58,761:INFO:save_model() successfully completed......................................
+2026-10-13 12:01:43,246:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:01:43,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:01:43,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:01:43,247:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:01:44,623:INFO:Initializing load_model()
+2026-10-13 12:01:44,623:INFO:load_model(model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\best_failure_model, platform=None, authentication=None, verbose=True)
+2026-10-13 12:01:44,716:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:01:44,768:INFO:Initializing predict_model()
+2026-10-13 12:01:44,768:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002247FDC3A10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Type'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encodin...
+                                    transformer=OneHotEncoder(cols=['Type'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002242687EE80>)
+2026-10-13 12:01:44,768:INFO:Checking exceptions
+2026-10-13 12:01:44,768:INFO:Preloading libraries
+2026-10-13 12:01:44,769:INFO:Set up data.
+2026-10-13 12:01:44,773:INFO:Set up index.
+2026-10-13 12:04:21,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:04:21,575:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:04:21,575:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:04:21,575:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:04:22,913:INFO:Initializing load_model()
+2026-10-13 12:04:22,913:INFO:load_model(model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\best_failure_model, platform=None, authentication=None, verbose=True)
+2026-10-13 12:04:23,005:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:04:23,060:INFO:Initializing predict_model()
+2026-10-13 12:04:23,060:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D8D1525650>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Type'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encodin...
+                                    transformer=OneHotEncoder(cols=['Type'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D8D2663100>)
+2026-10-13 12:04:23,061:INFO:Checking exceptions
+2026-10-13 12:04:23,061:INFO:Preloading libraries
+2026-10-13 12:04:23,061:INFO:Set up data.
+2026-10-13 12:04:23,067:INFO:Set up index.
+2026-10-13 12:06:22,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:06:22,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:06:22,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:06:22,899:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:06:24,287:INFO:PyCaret ClassificationExperiment
+2026-10-13 12:06:24,287:INFO:Logging name: clf-default-name
+2026-10-13 12:06:24,287:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-10-13 12:06:24,288:INFO:version 3.3.2
+2026-10-13 12:06:24,288:INFO:Initializing setup()
+2026-10-13 12:06:24,288:INFO:self.USI: 47f1
+2026-10-13 12:06:24,288:INFO:self._variable_keys: {'fold_shuffle_param', 'target_param', 'X_train', 'is_multiclass', 'exp_id', 'gpu_n_jobs_param', 'log_plots_param', 'USI', 'fold_groups_param', 'n_jobs_param', 'X', 'idx', 'html_param', 'logging_param', 'gpu_param', 'y_train', '_available_plots', 'seed', '_ml_usecase', 'data', 'y_test', 'fold_generator', 'fix_imbalance', 'pipeline', 'memory', 'X_test', 'y', 'exp_name_log'}
+2026-10-13 12:06:24,288:INFO:Checking environment
+2026-10-13 12:06:24,288:INFO:python_version: 3.11.9
+2026-10-13 12:06:24,288:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-10-13 12:06:24,289:INFO:machine: AMD64
+2026-10-13 12:06:24,317:INFO:platform: Windows-10-10.0.26200-SP0
+2026-10-13 12:06:24,318:INFO:Memory: svmem(total=16989728768, available=4963717120, percent=70.8, used=12026011648, free=4963717120)
+2026-10-13 12:06:24,318:INFO:Physical Core: 8
+2026-10-13 12:06:24,318:INFO:Logical Core: 16
+2026-10-13 12:06:24,319:INFO:Checking libraries
+2026-10-13 12:06:24,319:INFO:System:
+2026-10-13 12:06:24,319:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-10-13 12:06:24,319:INFO:executable: C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Scripts\python.exe
+2026-10-13 12:06:24,319:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-10-13 12:06:24,320:INFO:PyCaret required dependencies:
+2026-10-13 12:06:24,321:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:06:24,377:INFO:                 pip: 26.2.1
+2026-10-13 12:06:24,377:INFO:          setuptools: 65.5.0
+2026-10-13 12:06:24,377:INFO:             pycaret: 3.3.2
+2026-10-13 12:06:24,377:INFO:             IPython: 9.17.1
+2026-10-13 12:06:24,377:INFO:          ipywidgets: 8.1.9
+2026-10-13 12:06:24,377:INFO:                tqdm: 4.70.1
+2026-10-13 12:06:24,377:INFO:               numpy: 1.26.4
+2026-10-13 12:06:24,378:INFO:              pandas: 2.1.4
+2026-10-13 12:06:24,378:INFO:              jinja2: 3.1.6
+2026-10-13 12:06:24,378:INFO:               scipy: 1.11.4
+2026-10-13 12:06:24,379:INFO:              joblib: 1.3.2
+2026-10-13 12:06:24,379:INFO:             sklearn: 1.4.2
+2026-10-13 12:06:24,379:INFO:                pyod: 3.4.0
+2026-10-13 12:06:24,379:INFO:            imblearn: 0.14.2
+2026-10-13 12:06:24,380:INFO:   category_encoders: 2.7.0
+2026-10-13 12:06:24,380:INFO:            lightgbm: 4.7.0
+2026-10-13 12:06:24,381:INFO:               numba: 0.68.0
+2026-10-13 12:06:24,381:INFO:            requests: 2.34.2
+2026-10-13 12:06:24,381:INFO:          matplotlib: 3.7.5
+2026-10-13 12:06:24,381:INFO:          scikitplot: 0.3.7
+2026-10-13 12:06:24,381:INFO:         yellowbrick: 1.5
+2026-10-13 12:06:24,381:INFO:              plotly: 6.9.0
+2026-10-13 12:06:24,381:INFO:    plotly-resampler: Not installed
+2026-10-13 12:06:24,381:INFO:             kaleido: 1.5.0
+2026-10-13 12:06:24,381:INFO:           schemdraw: 0.15
+2026-10-13 12:06:24,381:INFO:         statsmodels: 0.15.0
+2026-10-13 12:06:24,382:INFO:              sktime: 0.26.0
+2026-10-13 12:06:24,382:INFO:               tbats: 1.1.3
+2026-10-13 12:06:24,382:INFO:            pmdarima: 2.0.4
+2026-10-13 12:06:24,382:INFO:              psutil: 7.2.2
+2026-10-13 12:06:24,382:INFO:          markupsafe: 3.0.4
+2026-10-13 12:06:24,382:INFO:             pickle5: Not installed
+2026-10-13 12:06:24,382:INFO:         cloudpickle: 3.1.2
+2026-10-13 12:06:24,382:INFO:         deprecation: 2.1.0
+2026-10-13 12:06:24,382:INFO:              xxhash: 4.0.1
+2026-10-13 12:06:24,382:INFO:           wurlitzer: Not installed
+2026-10-13 12:06:24,384:INFO:PyCaret optional dependencies:
+2026-10-13 12:06:24,409:INFO:                shap: Not installed
+2026-10-13 12:06:24,409:INFO:           interpret: Not installed
+2026-10-13 12:06:24,409:INFO:                umap: Not installed
+2026-10-13 12:06:24,409:INFO:     ydata_profiling: Not installed
+2026-10-13 12:06:24,409:INFO:  explainerdashboard: Not installed
+2026-10-13 12:06:24,410:INFO:             autoviz: Not installed
+2026-10-13 12:06:24,410:INFO:           fairlearn: Not installed
+2026-10-13 12:06:24,410:INFO:          deepchecks: Not installed
+2026-10-13 12:06:24,410:INFO:             xgboost: Not installed
+2026-10-13 12:06:24,410:INFO:            catboost: Not installed
+2026-10-13 12:06:24,410:INFO:              kmodes: Not installed
+2026-10-13 12:06:24,410:INFO:             mlxtend: Not installed
+2026-10-13 12:06:24,410:INFO:       statsforecast: Not installed
+2026-10-13 12:06:24,410:INFO:        tune_sklearn: Not installed
+2026-10-13 12:06:24,410:INFO:                 ray: Not installed
+2026-10-13 12:06:24,412:INFO:            hyperopt: Not installed
+2026-10-13 12:06:24,412:INFO:              optuna: Not installed
+2026-10-13 12:06:24,412:INFO:               skopt: Not installed
+2026-10-13 12:06:24,412:INFO:              mlflow: Not installed
+2026-10-13 12:06:24,412:INFO:              gradio: Not installed
+2026-10-13 12:06:24,412:INFO:             fastapi: Not installed
+2026-10-13 12:06:24,412:INFO:             uvicorn: Not installed
+2026-10-13 12:06:24,412:INFO:              m2cgen: Not installed
+2026-10-13 12:06:24,412:INFO:           evidently: Not installed
+2026-10-13 12:06:24,413:INFO:               fugue: Not installed
+2026-10-13 12:06:24,413:INFO:           streamlit: Not installed
+2026-10-13 12:06:24,413:INFO:             prophet: Not installed
+2026-10-13 12:06:24,413:INFO:None
+2026-10-13 12:06:24,413:INFO:Set up data.
+2026-10-13 12:06:24,423:INFO:Set up folding strategy.
+2026-10-13 12:06:24,423:INFO:Set up train/test split.
+2026-10-13 12:06:24,444:INFO:Set up index.
+2026-10-13 12:06:24,444:INFO:Assigning column types.
+2026-10-13 12:06:24,454:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-10-13 12:06:24,520:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,525:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,569:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,569:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,626:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,627:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,662:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,662:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,663:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-10-13 12:06:24,727:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,761:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,761:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,818:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:06:24,853:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,853:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,854:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-10-13 12:06:24,958:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:24,958:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,054:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,054:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,057:INFO:Preparing preprocessing pipeline...
+2026-10-13 12:06:25,058:INFO:Set up simple imputation.
+2026-10-13 12:06:25,061:INFO:Set up encoding of categorical features.
+2026-10-13 12:06:25,062:INFO:Set up imbalanced handling.
+2026-10-13 12:06:25,062:INFO:Set up feature normalization.
+2026-10-13 12:06:25,062:INFO:Set up column name cleaning.
+2026-10-13 12:06:25,180:INFO:Finished creating preprocessing pipeline.
+2026-10-13 12:06:25,190:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-10-13 12:06:25,190:INFO:Creating final display dataframe.
+2026-10-13 12:06:25,340:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target   Machine failure
+2                   Target type            Binary
+3           Original data shape         (8000, 7)
+4        Transformed data shape        (13220, 9)
+5   Transformed train set shape        (10820, 9)
+6    Transformed test set shape         (2400, 9)
+7              Numeric features                 5
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15                Fix imbalance              True
+16         Fix imbalance method             SMOTE
+17                    Normalize              True
+18             Normalize method            zscore
+19               Fold Generator   StratifiedKFold
+20                  Fold Number                 5
+21                     CPU Jobs                -1
+22                      Use GPU             False
+23               Log Experiment             False
+24              Experiment Name  clf-default-name
+25                          USI              47f1
+2026-10-13 12:06:25,452:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,453:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,554:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,554:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:06:25,556:INFO:setup() successfully completed in 1.27s...............
+2026-10-13 12:06:25,556:INFO:Initializing create_model()
+2026-10-13 12:06:25,556:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000225B9525E90>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={'sort': 'F1'})
+2026-10-13 12:06:25,556:INFO:Checking exceptions
+2026-10-13 12:06:25,559:INFO:Importing libraries
+2026-10-13 12:06:25,559:INFO:Copying training dataset
+2026-10-13 12:06:25,565:INFO:Defining folds
+2026-10-13 12:06:25,566:INFO:Declaring metric variables
+2026-10-13 12:06:25,566:INFO:Importing untrained model
+2026-10-13 12:07:23,309:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:07:23,309:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:07:23,310:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:07:23,310:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:07:24,623:INFO:PyCaret ClassificationExperiment
+2026-10-13 12:07:24,623:INFO:Logging name: clf-default-name
+2026-10-13 12:07:24,623:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-10-13 12:07:24,623:INFO:version 3.3.2
+2026-10-13 12:07:24,623:INFO:Initializing setup()
+2026-10-13 12:07:24,624:INFO:self.USI: 7034
+2026-10-13 12:07:24,624:INFO:self._variable_keys: {'exp_id', 'gpu_param', 'html_param', 'fold_generator', 'X_train', 'USI', 'data', 'gpu_n_jobs_param', 'y_test', 'fix_imbalance', 'fold_shuffle_param', 'pipeline', 'fold_groups_param', 'X_test', 'X', 'log_plots_param', 'is_multiclass', '_available_plots', 'exp_name_log', 'n_jobs_param', 'idx', 'memory', 'logging_param', 'seed', 'y_train', '_ml_usecase', 'y', 'target_param'}
+2026-10-13 12:07:24,624:INFO:Checking environment
+2026-10-13 12:07:24,624:INFO:python_version: 3.11.9
+2026-10-13 12:07:24,624:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2026-10-13 12:07:24,624:INFO:machine: AMD64
+2026-10-13 12:07:24,655:INFO:platform: Windows-10-10.0.26200-SP0
+2026-10-13 12:07:24,656:INFO:Memory: svmem(total=16989728768, available=4892008448, percent=71.2, used=12097720320, free=4892008448)
+2026-10-13 12:07:24,656:INFO:Physical Core: 8
+2026-10-13 12:07:24,656:INFO:Logical Core: 16
+2026-10-13 12:07:24,656:INFO:Checking libraries
+2026-10-13 12:07:24,656:INFO:System:
+2026-10-13 12:07:24,656:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2026-10-13 12:07:24,656:INFO:executable: C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Scripts\python.exe
+2026-10-13 12:07:24,656:INFO:   machine: Windows-10-10.0.26200-SP0
+2026-10-13 12:07:24,656:INFO:PyCaret required dependencies:
+2026-10-13 12:07:24,657:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:24,692:INFO:                 pip: 26.2.1
+2026-10-13 12:07:24,692:INFO:          setuptools: 65.5.0
+2026-10-13 12:07:24,692:INFO:             pycaret: 3.3.2
+2026-10-13 12:07:24,692:INFO:             IPython: 9.17.1
+2026-10-13 12:07:24,692:INFO:          ipywidgets: 8.1.9
+2026-10-13 12:07:24,693:INFO:                tqdm: 4.70.1
+2026-10-13 12:07:24,693:INFO:               numpy: 1.26.4
+2026-10-13 12:07:24,693:INFO:              pandas: 2.1.4
+2026-10-13 12:07:24,693:INFO:              jinja2: 3.1.6
+2026-10-13 12:07:24,693:INFO:               scipy: 1.11.4
+2026-10-13 12:07:24,693:INFO:              joblib: 1.3.2
+2026-10-13 12:07:24,693:INFO:             sklearn: 1.4.2
+2026-10-13 12:07:24,693:INFO:                pyod: 3.4.0
+2026-10-13 12:07:24,693:INFO:            imblearn: 0.14.2
+2026-10-13 12:07:24,693:INFO:   category_encoders: 2.7.0
+2026-10-13 12:07:24,693:INFO:            lightgbm: 4.7.0
+2026-10-13 12:07:24,693:INFO:               numba: 0.68.0
+2026-10-13 12:07:24,693:INFO:            requests: 2.34.2
+2026-10-13 12:07:24,693:INFO:          matplotlib: 3.7.5
+2026-10-13 12:07:24,693:INFO:          scikitplot: 0.3.7
+2026-10-13 12:07:24,693:INFO:         yellowbrick: 1.5
+2026-10-13 12:07:24,693:INFO:              plotly: 6.9.0
+2026-10-13 12:07:24,693:INFO:    plotly-resampler: Not installed
+2026-10-13 12:07:24,694:INFO:             kaleido: 1.5.0
+2026-10-13 12:07:24,694:INFO:           schemdraw: 0.15
+2026-10-13 12:07:24,694:INFO:         statsmodels: 0.15.0
+2026-10-13 12:07:24,694:INFO:              sktime: 0.26.0
+2026-10-13 12:07:24,694:INFO:               tbats: 1.1.3
+2026-10-13 12:07:24,694:INFO:            pmdarima: 2.0.4
+2026-10-13 12:07:24,694:INFO:              psutil: 7.2.2
+2026-10-13 12:07:24,694:INFO:          markupsafe: 3.0.4
+2026-10-13 12:07:24,694:INFO:             pickle5: Not installed
+2026-10-13 12:07:24,694:INFO:         cloudpickle: 3.1.2
+2026-10-13 12:07:24,694:INFO:         deprecation: 2.1.0
+2026-10-13 12:07:24,694:INFO:              xxhash: 4.0.1
+2026-10-13 12:07:24,694:INFO:           wurlitzer: Not installed
+2026-10-13 12:07:24,694:INFO:PyCaret optional dependencies:
+2026-10-13 12:07:24,711:INFO:                shap: Not installed
+2026-10-13 12:07:24,711:INFO:           interpret: Not installed
+2026-10-13 12:07:24,711:INFO:                umap: Not installed
+2026-10-13 12:07:24,711:INFO:     ydata_profiling: Not installed
+2026-10-13 12:07:24,711:INFO:  explainerdashboard: Not installed
+2026-10-13 12:07:24,711:INFO:             autoviz: Not installed
+2026-10-13 12:07:24,711:INFO:           fairlearn: Not installed
+2026-10-13 12:07:24,712:INFO:          deepchecks: Not installed
+2026-10-13 12:07:24,712:INFO:             xgboost: Not installed
+2026-10-13 12:07:24,712:INFO:            catboost: Not installed
+2026-10-13 12:07:24,712:INFO:              kmodes: Not installed
+2026-10-13 12:07:24,712:INFO:             mlxtend: Not installed
+2026-10-13 12:07:24,712:INFO:       statsforecast: Not installed
+2026-10-13 12:07:24,712:INFO:        tune_sklearn: Not installed
+2026-10-13 12:07:24,712:INFO:                 ray: Not installed
+2026-10-13 12:07:24,712:INFO:            hyperopt: Not installed
+2026-10-13 12:07:24,712:INFO:              optuna: Not installed
+2026-10-13 12:07:24,712:INFO:               skopt: Not installed
+2026-10-13 12:07:24,712:INFO:              mlflow: Not installed
+2026-10-13 12:07:24,712:INFO:              gradio: Not installed
+2026-10-13 12:07:24,712:INFO:             fastapi: Not installed
+2026-10-13 12:07:24,712:INFO:             uvicorn: Not installed
+2026-10-13 12:07:24,712:INFO:              m2cgen: Not installed
+2026-10-13 12:07:24,712:INFO:           evidently: Not installed
+2026-10-13 12:07:24,712:INFO:               fugue: Not installed
+2026-10-13 12:07:24,712:INFO:           streamlit: Not installed
+2026-10-13 12:07:24,713:INFO:             prophet: Not installed
+2026-10-13 12:07:24,713:INFO:None
+2026-10-13 12:07:24,713:INFO:Set up data.
+2026-10-13 12:07:24,723:INFO:Set up folding strategy.
+2026-10-13 12:07:24,723:INFO:Set up train/test split.
+2026-10-13 12:07:24,735:INFO:Set up index.
+2026-10-13 12:07:24,736:INFO:Assigning column types.
+2026-10-13 12:07:24,740:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-10-13 12:07:24,797:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 12:07:24,802:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:07:24,849:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:24,849:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:24,904:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-10-13 12:07:24,905:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:07:24,939:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:24,940:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:24,940:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-10-13 12:07:25,002:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:07:25,037:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,038:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,101:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-10-13 12:07:25,141:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,142:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,142:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-10-13 12:07:25,244:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,244:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,338:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,338:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,341:INFO:Preparing preprocessing pipeline...
+2026-10-13 12:07:25,342:INFO:Set up simple imputation.
+2026-10-13 12:07:25,345:INFO:Set up encoding of categorical features.
+2026-10-13 12:07:25,345:INFO:Set up imbalanced handling.
+2026-10-13 12:07:25,346:INFO:Set up feature normalization.
+2026-10-13 12:07:25,346:INFO:Set up column name cleaning.
+2026-10-13 12:07:25,466:INFO:Finished creating preprocessing pipeline.
+2026-10-13 12:07:25,478:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2026-10-13 12:07:25,478:INFO:Creating final display dataframe.
+2026-10-13 12:07:25,645:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target   Machine failure
+2                   Target type            Binary
+3           Original data shape         (8000, 7)
+4        Transformed data shape        (13220, 9)
+5   Transformed train set shape        (10820, 9)
+6    Transformed test set shape         (2400, 9)
+7              Numeric features                 5
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15                Fix imbalance              True
+16         Fix imbalance method             SMOTE
+17                    Normalize              True
+18             Normalize method            zscore
+19               Fold Generator   StratifiedKFold
+20                  Fold Number                 5
+21                     CPU Jobs                -1
+22                      Use GPU             False
+23               Log Experiment             False
+24              Experiment Name  clf-default-name
+25                          USI              7034
+2026-10-13 12:07:25,745:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,745:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,842:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,842:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-10-13 12:07:25,844:INFO:setup() successfully completed in 1.23s...............
+2026-10-13 12:07:25,844:INFO:Initializing create_model()
+2026-10-13 12:07:25,844:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029E98549BD0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-10-13 12:07:25,844:INFO:Checking exceptions
+2026-10-13 12:07:25,847:INFO:Importing libraries
+2026-10-13 12:07:25,847:INFO:Copying training dataset
+2026-10-13 12:07:25,854:INFO:Defining folds
+2026-10-13 12:07:25,854:INFO:Declaring metric variables
+2026-10-13 12:07:25,854:INFO:Importing untrained model
+2026-10-13 12:07:25,854:INFO:Random Forest Classifier Imported successfully
+2026-10-13 12:07:25,855:INFO:Starting cross validation
+2026-10-13 12:07:25,857:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2026-10-13 12:07:31,478:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:31,482:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:31,483:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:31,485:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:31,521:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:07:32,618:INFO:Calculating mean and std
+2026-10-13 12:07:32,620:INFO:Creating metrics dataframe
+2026-10-13 12:07:32,623:INFO:Finalizing model
+2026-10-13 12:07:33,000:INFO:Uploading results into container
+2026-10-13 12:07:33,001:INFO:Uploading model into container now
+2026-10-13 12:07:33,010:INFO:_master_model_container: 1
+2026-10-13 12:07:33,010:INFO:_display_container: 2
+2026-10-13 12:07:33,011:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2026-10-13 12:07:33,011:INFO:create_model() successfully completed......................................
+2026-10-13 12:07:33,107:INFO:Initializing save_model()
+2026-10-13 12:07:33,107:INFO:save_model(model=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False), model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\random_forest_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\ASUS\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_v...
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2026-10-13 12:07:33,107:INFO:Adding model into prep_pipe
+2026-10-13 12:07:33,165:INFO:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\random_forest_model.pkl saved in current working directory
+2026-10-13 12:07:33,178:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categori...
+                 RandomForestClassifier(bootstrap=True, ccp_alpha=0.0,
+                                        class_weight=None, criterion='gini',
+                                        max_depth=None, max_features='sqrt',
+                                        max_leaf_nodes=None, max_samples=None,
+                                        min_impurity_decrease=0.0,
+                                        min_samples_leaf=1, min_samples_split=2,
+                                        min_weight_fraction_leaf=0.0,
+                                        monotonic_cst=None, n_estimators=100,
+                                        n_jobs=-1, oob_score=False,
+                                        random_state=42, verbose=0,
+                                        warm_start=False))],
+         verbose=False)
+2026-10-13 12:07:33,178:INFO:save_model() successfully completed......................................
+2026-10-13 12:09:15,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:09:15,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:09:15,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:09:15,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-13 12:09:16,783:INFO:Initializing load_model()
+2026-10-13 12:09:16,783:INFO:load_model(model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\best_failure_model, platform=None, authentication=None, verbose=True)
+2026-10-13 12:09:16,865:WARNING:C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\.venv311\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2026-10-13 12:09:16,920:INFO:Initializing predict_model()
+2026-10-13 12:09:16,920:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019C22023FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Type'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encodin...
+                                    transformer=OneHotEncoder(cols=['Type'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019C221A2FC0>)
+2026-10-13 12:09:16,920:INFO:Checking exceptions
+2026-10-13 12:09:16,920:INFO:Preloading libraries
+2026-10-13 12:09:16,920:INFO:Set up data.
+2026-10-13 12:09:16,925:INFO:Set up index.
+2026-10-13 12:09:17,143:INFO:Initializing load_model()
+2026-10-13 12:09:17,143:INFO:load_model(model_name=C:\Users\ASUS\OneDrive\Desktop\Industrial Equipment Failure Prediction\models\random_forest_model, platform=None, authentication=None, verbose=True)
+2026-10-13 12:09:17,232:INFO:Initializing predict_model()
+2026-10-13 12:09:17,232:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019C7DFB1CD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Air temperature [K]',
+                                             'Process temperature [K]',
+                                             'Rotational speed [rpm]',
+                                             'Torque [Nm]', 'Tool wear [min]'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Type'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encodin...
+                                    transformer=OneHotEncoder(cols=['Type'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('balance',
+                 TransformerWrapper(transformer=FixImbalancer(estimator=SMOTE(random_state=42)))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019C7E3B7B00>)
+2026-10-13 12:09:17,232:INFO:Checking exceptions
+2026-10-13 12:09:17,232:INFO:Preloading libraries
+2026-10-13 12:09:17,233:INFO:Set up data.
+2026-10-13 12:09:17,236:INFO:Set up index.
