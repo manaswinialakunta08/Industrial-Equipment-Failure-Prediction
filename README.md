@@ -453,14 +453,6 @@ Industrial Equipment Failure Prediction/
 3. **False Negatives (Missed Failures):** The model missed 22 failures (32.35% of failure events) in the holdout test set. It should not be used as an autonomous shutdown trigger without secondary physical interlocks.
 4. **False Positive Burden:** The 0.45 threshold produced 51 false alarms on 2,000 test rows, requiring maintenance personnel to verify benign conditions.
 
-### Proposed Future Improvements
-- [ ] **Probability Calibration:** Apply Platt scaling (logistic sigmoid) or isotonic regression to output calibrated Bayesian probabilities.
-- [ ] **Streaming Telemetry Ingestion:** Implement an MQTT/OPC-UA edge client to stream readings directly from industrial PLCs into the FastAPI backend.
-- [ ] **Multi-Class Failure Mode Attribution:** Extend the pipeline to classify specific breakdown types (`TWF`, `HDF`, `PWF`, `OSF`) once risk is detected.
-- [ ] **Persistent Database Storage:** Introduce a PostgreSQL or TimescaleDB time-series database to log telemetry across browser sessions.
-- [ ] **Role-Based Access Control:** Add user authentication (OAuth2 / JWT) separating machine operators from reliability engineers.
-
----
 
 ## Author and License
 
