@@ -443,20 +443,10 @@ Industrial Equipment Failure Prediction/
 └── README.md                       # Project documentation
 ```
 
----
-
-## Limitations and Future Improvements
-
-### Current Limitations
-1. **Absence of Real-Time IoT Ingestion:** The dashboard processes manually entered values and sample benchmarks. No streaming telemetry broker (e.g., Apache Kafka, MQTT, or OPC-UA) is currently connected.
-2. **Uncalibrated Model Scores:** The probability scores reflect tree voting ratios from Extra Trees, which are uncalibrated and should be treated as relative risk indicators.
-3. **False Negatives (Missed Failures):** The model missed 22 failures (32.35% of failure events) in the holdout test set. It should not be used as an autonomous shutdown trigger without secondary physical interlocks.
-4. **False Positive Burden:** The 0.45 threshold produced 51 false alarms on 2,000 test rows, requiring maintenance personnel to verify benign conditions.
-
 
 ## Author and License
 
-- **Author:** [A.Manaswini / manaswinialakunta08](https://github.com/manaswinialakunta08)
+- **Author:** A.Manaswini 
 - **Project:** Industrial Equipment Failure Prediction System
-- **License:** Distributed under the MIT License. See `LICENSE` for details.
+
 
