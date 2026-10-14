@@ -443,9 +443,6 @@ Industrial Equipment Failure Prediction/
 └── README.md                       # Project documentation
 ```
 
-
-## Author and License
-
 - **Author:** A.Manaswini 
 - **Project:** Industrial Equipment Failure Prediction System
 
